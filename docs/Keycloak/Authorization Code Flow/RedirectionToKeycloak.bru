@@ -1,0 +1,20 @@
+meta {
+  name: RedirectionToKeycloak
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8080/realms/authorization.identity/protocol/openid-connect/auth?scope=openid&response_type=code&client_id=authorization.identity&redirect_uri=http://localhost:3000/&code_challenge_method=S256&code_challenge=teyqBTyNVq3hk5QzwI6hh5GR07H75KpELGBdDSDjCCY
+  body: none
+  auth: none
+}
+
+params:query {
+  scope: openid
+  response_type: code
+  client_id: authorization.identity
+  redirect_uri: http://localhost:3000/
+  code_challenge_method: S256
+  code_challenge: teyqBTyNVq3hk5QzwI6hh5GR07H75KpELGBdDSDjCCY
+}

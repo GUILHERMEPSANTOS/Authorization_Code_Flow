@@ -1,0 +1,6 @@
+@Authorization_Code_Flow.Api_HostAddress = http://localhost:5278
+
+GET {{Authorization_Code_Flow.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
